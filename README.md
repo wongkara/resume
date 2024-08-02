@@ -1,1 +1,1 @@
-# resume
+# LaTeX markup for my résumé
