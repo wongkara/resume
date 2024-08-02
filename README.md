@@ -1,1 +1,4 @@
-# LaTeX markup for my résumé
+# résumé
+LaTeX markup for my personal résumé 
+
+Based off of [jakegut/resume](https://github.com/jakegut/resume)
