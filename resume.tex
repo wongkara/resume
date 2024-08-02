@@ -1,0 +1,229 @@
+%-------------------------------------------
+% Résumé in LaTeX
+% Author: Kara Wong
+% Source: https://github.com/jakegut/resume
+% License: MIT
+%-------------------------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fåullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%---------CUSTOM COMMANDS-------------------
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeCourseworkSubheading}[1]{
+    \vspace{-6pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    {\small#1}\\
+    \end{tabular*}\vspace{-1pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-4pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textit{\small#1} & \textit{\small#2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[1]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small#1 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Kara Wong} \\ \vspace{1pt}
+    \small (xxx) xxx-xxxx $|$ \href{mailto:karawong@umich.edu}{\underline{karawong@umich.edu}} $|$ 
+    \href{https://linkedin.com/in/wongkara}{\underline{linkedin.com/in/wongkara}} $|$
+    \href{https://github.com/wongkara}{\underline{github.com/wongkara}}
+\end{center}
+
+
+%-----------EDUCATION---------------------
+\vspace{-15pt}\section{Education}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {University of Michigan}{Ann Arbor, MI}
+      {Bachelor of Science in Engineering, Computer Engineering}{Aug 2023 -- May 2027}
+      \resumeCourseworkSubheading
+        {Relevant Coursework: Discrete Mathematics, Linear Algebra, Programming and Introductory Data Structures (C++)}
+        
+    \resumeSubheading
+      {Rochester Adams High School}{Rochester Hills, MI}
+      {High School Diploma}{Aug 2019 -- May 2023}
+      \resumeCourseworkSubheading
+        {Relevant Coursework: AP Computer Science A (Java), AP Computer Science Principles (JavaScript)}
+        
+  \resumeSubHeadingListEnd
+
+
+%-----------EMPLOYMENT----------------------
+\vspace{-10pt}\section{Employment}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Michigan Research and Discovery Scholars}{Ann Arbor, MI}
+      {Peer Mentor}{Apr 2024 -- Present}
+      \resumeItemListStart
+        \resumeItem{Supporting first-year scholars in their college transition}
+        \resumeItem{Planning and hosting monthly connection events with mentees}
+      \resumeItemListEnd
+      
+    \resumeSubSubheading
+      {Recruitment Ambassador}{Jan 2024 -- Apr 2024}
+      \resumeItemListStart
+        \resumeItem{Recruited prospective applicants at Campus Day events}
+        \resumeItem{Created content for social media and website}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {University of Michigan}{Ann Arbor, MI}
+      {Research Intern}{Sep 2023 -- Apr 2024}
+      \resumeItemListStart
+        \resumeItem{Designed IoT prototypes for a net-zero building automation system}
+        \resumeItem{Developed a Python script to collect CO$_{2}$, humidity, and temperature sensor data via Raspberry Pi GPIO}
+        \resumeItem{Aided research team in MQTT implementation and window actuator fabrication}
+        \resumeItem{Created poster summarizing research outcomes and presented findings at Spring Research Symposium}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+  
+%-----------EXTRACURRICULARS----------------
+\section{Extracurriculars}
+    \resumeSubHeadingListStart
+    
+    \resumeSubheading
+        {University of Michigan German Club E-Board}{Ann Arbor, MI}
+        {Marketing \& Social Media Chair}{Jun 2024 -- Present}
+        \resumeItemListStart
+            \resumeItem{Maintain and update online accounts representing the club}
+            \resumeItem{Regularly document club activities via photographs and videos}
+            \resumeItem{Ensure high attendance levels at meetings through marketing opportunities}
+        \resumeItemListEnd
+        
+    \resumeSubheading
+        {M-Fly Aero Design}{Ann Arbor, MI}
+        {Software Subteam Member}{Nov 2023 -- Present}
+        \resumeItemListStart
+            \resumeItem{Collaboratively testing and refining computer vision algorithms for an autonomous competition aircraft}
+        \resumeItemListEnd
+        
+    \resumeSubheading
+        {Michigan Research and Discovery Scholars}{Ann Arbor}
+        {First-Year Scholar}{Aug 2023 -- Apr 2024}
+        \resumeItemListStart
+            \resumeItem{Engaged in weekly social and professional development programming}
+            \resumeItem{Lived and learned with $\sim$140 other students in a close-knit, research-oriented community}
+        \resumeItemListEnd
+        
+    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+%-----------PROJECTS------------------------
+\section{Projects}
+    \resumeSubHeadingListStart
+    
+        \resumeProjectHeading
+            {\textbf{Hockey Puck Tracker} $|$ \emph{OpenCV, Python}}
+            \resumeItemListStart
+                \resumeItem{Developing a system to monitor and display hockey puck trajectories, 
+                providing valuable insights into shot patterns and player performance 
+                through advanced tracking and visualization techniques}
+            \resumeItemListEnd
+            
+        \resumeProjectHeading
+            {\textbf{wongkara.github.io} $|$ \emph{Git, HTML/CSS, JavaScript, Python}}
+            \resumeItemListStart
+                \resumeItem{Building an interactive animated personal website and portfolio}
+            \resumeItemListEnd
+            
+        \resumeProjectHeading
+            {\textbf{Computer Vision (Class Project)} $|$ \emph{C++, Git}}
+            \resumeItemListStart
+                \resumeItem{Built a content-aware image resizing program using a seam-carving algorithm}
+            \resumeItemListEnd
+            
+    \resumeSubHeadingListEnd
+    
+%-------------------------------------------
+
+%-----------TECHNICAL SKILLS----------------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    \textbf{Developer Tools}{: Eclipse, Git, VS Code} \\
+    \textbf{Languages}{: C++, HTML/CSS, Java, JavaScript, Python} \\
+    \textbf{Libraries}{: NumPy, OpenCV} \\
+    }}
+ \end{itemize}
+%-------------------------------------------
+\end{document}
