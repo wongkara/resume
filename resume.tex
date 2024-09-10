@@ -63,10 +63,10 @@
 }
 
 \newcommand{\resumeCourseworkSubheading}[1]{
-    \vspace{-6pt}\item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-    {\small#1}\\
-    \end{tabular*}\vspace{-1pt}
+    \vspace{-7pt}\item
+    \parbox[t]{0.97\textwidth}{
+        \small #1
+    }\vspace{-6pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
@@ -76,12 +76,12 @@
     \end{tabular*}\vspace{-7pt}
 }
 
-\newcommand{\resumeProjectHeading}[1]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-    \small#1 \\
-    \end{tabular*}\vspace{-7pt}
-}
+% \newcommand{\resumeProjectHeading}[1]{
+%     \item
+%     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+%     \small#1 \\
+%     \end{tabular*}\vspace{-7pt}
+% }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
 
@@ -100,23 +100,21 @@
 \begin{document}
 
 \begin{center}
-    \textbf{\Huge \scshape Kara Wong} \\ \vspace{1pt}
-    \small (XXX) XXX-XXXX $|$ \href{mailto:karawong@umich.edu}{\underline{karawong@umich.edu}} $|$ 
-    \href{https://linkedin.com/in/wongkara}{\underline{linkedin.com/in/wongkara}} $|$
-    \href{https://github.com/wongkara}{\underline{github.com/wongkara}}
+    \textbf{\Huge \scshape Kara\hspace{-0.1em} Wong} \\ \vspace{1pt}
+    \small (XXX) XXX-XXXX $|$ \href{mailto:karawong@umich.edu}{karawong@umich.edu} $|$ 
+    \href{https://linkedin.com/in/wongkara}{linkedin.com/in/wongkara}
 \end{center}
 
 
 %-----------EDUCATION---------------------
-\vspace{-15pt}\section{Education}
+\vspace{-20pt}\section{Education}
   \resumeSubHeadingListStart
   
     \resumeSubheading
       {University of Michigan}{Ann Arbor, MI}
       {Bachelor of Science in Engineering, Computer Engineering}{Aug 2023 -- May 2027}
       \resumeCourseworkSubheading
-        {Relevant Coursework: Discrete Mathematics, Linear Algebra, Programming and Introductory Data Structures (C++)}
-        
+      {Relevant Coursework: Data Structures and Algorithms (C++), Applied Linear Algebra, Discrete Mathematics, Programming and Introductory Data Structures (C++), Elementary Programming Concepts (C++, Python)}
     \resumeSubheading
       {Rochester Adams High School}{Rochester Hills, MI}
       {High School Diploma}{Aug 2019 -- May 2023}
@@ -127,30 +125,32 @@
 
 
 %-----------EMPLOYMENT----------------------
-\vspace{-10pt}\section{Employment}
+\vspace{-11pt}\section{Employment}
   \resumeSubHeadingListStart
   
     \resumeSubheading
-      {Michigan Research and Discovery Scholars}{Ann Arbor, MI}
+      {Michigan Research and Discovery Scholars (MRADS)}{Ann Arbor, MI}
       {Peer Mentor}{Apr 2024 -- Present}
       \resumeItemListStart
-        \resumeItem{Supporting first-year scholars in their college transition}
-        \resumeItem{Planning and hosting monthly connection events with mentees}
+        \resumeItem{Planning and hosting monthly connection events to engage first-year MRADS scholars in building a community based on mutual respect and affirmation of diversity}
+        \resumeItem{Supporting mentees in their college transition by conducting semesterly 1-on-1 check-ins}
+        \resumeItem{Collaborating with university staff to coordinate community-wide events in Mosher-Jordan Hall once per semester}
       \resumeItemListEnd
       
     \resumeSubSubheading
       {Recruitment Ambassador}{Jan 2024 -- Apr 2024}
       \resumeItemListStart
-        \resumeItem{Recruited prospective applicants at Campus Day events}
-        \resumeItem{Created content for social media and website}
+        \resumeItem{Recruited prospective applicants at Campus Day events by delivering presentations to parents and students}
+        \resumeItem{Created promotional content for social media and website}
       \resumeItemListEnd
 
     \resumeSubheading
       {University of Michigan}{Ann Arbor, MI}
-      {Research Intern}{Sep 2023 -- Apr 2024}
+      {Undergraduate Researcher}{Sep 2023 -- Apr 2024}
       \resumeItemListStart
-        \resumeItem{Designed IoT prototypes for a net-zero building automation system}
+        \resumeItem{Designed IoT prototypes for a net-zero building automation system under the guidance of a professor}
         \resumeItem{Developed a Python script to collect CO$_{2}$, humidity, and temperature sensor data via Raspberry Pi GPIO}
+        \resumeItem{Selected specialized hardware to be purchased by principal investigator for project purposes}
         \resumeItem{Aided research team in MQTT implementation and window actuator fabrication}
         \resumeItem{Created poster summarizing research outcomes and presented findings at Spring Research Symposium}
       \resumeItemListEnd
@@ -158,30 +158,33 @@
   \resumeSubHeadingListEnd
   
 %-----------EXTRACURRICULARS----------------
-\section{Extracurriculars}
+\vspace{-15pt}\section{Extracurriculars}
     \resumeSubHeadingListStart
     
     \resumeSubheading
         {University of Michigan German Club E-Board}{Ann Arbor, MI}
         {Marketing \& Social Media Chair}{Jun 2024 -- Present}
         \resumeItemListStart
-            \resumeItem{Maintain and update online accounts representing the club}
-            \resumeItem{Regularly document club activities via photographs and videos}
-            \resumeItem{Ensure high attendance levels at meetings through marketing opportunities}
+            \resumeItem{Building a website in HTML/CSS and JavaScript to promote the club's events, interests, and purposes}
+            \resumeItem{Regularly updating club social media and documenting club activities via photograph and video}
+            \resumeItem{Ensuring high engagement at club events via marketing opportunities with campus organizations}
+            \resumeItem{Coordinating with E-Board to organize weekly "Stammtisch" and monthly cultural activities}
         \resumeItemListEnd
         
     \resumeSubheading
         {M-Fly Aero Design}{Ann Arbor, MI}
         {Software Subteam Member}{Nov 2023 -- Present}
         \resumeItemListStart
-            \resumeItem{Collaboratively testing and refining computer vision algorithms for autonomous competition aircraft}
+            \resumeItem{Collaboratively testing and refining Python computer vision algorithms for autonomous competition aircraft}
+            \resumeItem{Attending weekly meetings with subteam members to discuss goals and progress}
         \resumeItemListEnd
         
     \resumeSubheading
-        {Michigan Research and Discovery Scholars}{Ann Arbor, MI}
+        {Michigan Research and Discovery Scholars (MRADS)}{Ann Arbor, MI}
         {First-Year Scholar}{Aug 2023 -- Apr 2024}
         \resumeItemListStart
-            \resumeItem{Engaged in weekly social and professional development programming}
+            \resumeItem{Applied to and maintained a university research position as mandated by MRADS requirements}
+            \resumeItem{Engaged in weekly social and professional development programming pertinent to research and DEI initiatives}
             \resumeItem{Lived and learned with $\sim$140 other students in a close-knit, research-oriented community}
         \resumeItemListEnd
         
@@ -189,31 +192,26 @@
 %-------------------------------------------
 
 %-----------PROJECTS------------------------
-\section{Projects}
-    \resumeSubHeadingListStart
+% \section{Projects}
+%     \resumeSubHeadingListStart
     
-        \resumeProjectHeading
-            {\textbf{wongkara.github.io} $|$ {Git, HTML/CSS, JavaScript, Python}}
-            \resumeItemListStart
-                \resumeItem{Building an interactive animated personal website and portfolio}
-            \resumeItemListEnd
+%         \resumeProjectHeading
+%             {\textbf{wongkara.github.io} $|$ {Git, HTML/CSS, JavaScript, Python}}
+%             \resumeItemListStart
+%                 \resumeItem{Building an interactive animated personal website and portfolio}
+%             \resumeItemListEnd
             
-        \resumeProjectHeading
-            {\textbf{Computer Vision (Class Project)} $|$ {C++, Git}}
-            \resumeItemListStart
-                \resumeItem{Built a content-aware image resizing program using a seam-carving algorithm}
-            \resumeItemListEnd
-            
-    \resumeSubHeadingListEnd
+%     \resumeSubHeadingListEnd
     
 %-------------------------------------------
 
 %-----------TECHNICAL SKILLS----------------
-\section{Technical Skills}
+\vspace{-15pt}\section{Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-    \textbf{Developer Tools}{: Eclipse, Git, VS Code} \\
-    \textbf{Languages}{: C++, HTML/CSS, Java, JavaScript, Python} \\
+    \textbf{Developer Tools}{: Git, VS Code} \\
+    \textbf{Languages}{: German} \\
+    \textbf{Programming Languages}{: C++, HTML/CSS, JavaScript, Python} \\
     }}
  \end{itemize}
 %-------------------------------------------
